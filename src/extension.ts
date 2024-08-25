@@ -23,14 +23,14 @@ export function activate(context: vscode.ExtensionContext) {
         "Hello Worlddddd from project-watcher!"
       );
 
-      const files = vscode.workspace.workspaceFolders?.length
-        ? vscode.workspace.fs.readDirectory(
-            vscode.workspace.workspaceFolders?.[0].uri
-          )
-        : undefined;
-      files?.then((files) => {
-        console.log(files);
-      });
+      // const files = vscode.workspace.workspaceFolders?.length
+      //   ? vscode.workspace.fs.readDirectory(
+      //       vscode.workspace.workspaceFolders?.[0].uri
+      //     )
+      //   : undefined;
+      // files?.then((files) => {
+      //   console.log(files);
+      // });
     }
   );
 
